@@ -3,7 +3,7 @@ title: "Microsoft Windows Marken-Redesign – in nur 3 Tagen"
 date: "2012-07-07"
 ---
 
-<div class="fullWidth">(image: bild.jpeg)</div>
+![Windows Redesign](./bild.jpeg)
 
 Designstudent Andrew Kim machte ein Experiment: einen neuen Markenauftritt für Microsoft erstellen – in gerade mal drei Tagen.
 

@@ -3,7 +3,7 @@ title: "Das neue Microsoft Logo: Langeweile im Quadrat"
 date: "2012-08-24"
 ---
 
-(image: logo.png)
+![Neues Microsoft Logo](./logo.png)
 
 Das <a href="http://blogs.technet.com/b/microsoft_blog/archive/2012/08/23/microsoft-unveils-a-new-look.aspx">neue Microsoft Logo</a> wurde gestern der Öffentlichkeit vorgestellt.
 
