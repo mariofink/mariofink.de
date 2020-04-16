@@ -8,8 +8,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { rhythm } from "../utils/typography"
-
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -26,12 +24,7 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div
-      style={{
-        display: `flex`,
-        marginBottom: rhythm(2.5),
-      }}
-    >
+    <div>
       <p>
         <strong>{author}</strong> – Webentwickler aus Fulda
         {` `}
