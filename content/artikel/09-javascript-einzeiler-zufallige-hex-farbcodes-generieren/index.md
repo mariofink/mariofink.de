@@ -3,7 +3,9 @@ title: "JavaScript-Einzeiler: Zufällige HEX-Farbcodes generieren"
 date: "2012-07-25"
 ---
 
-<pre><code class="javascript">'#'+Math.floor(Math.random()*16777215).toString(16);</code></pre>
+```javascript
+"#" + Math.floor(Math.random() * 16777215).toString(16)
+```
 
 <a href="http://paulirish.com/2009/random-hex-color-code-snippets/">Paul Irish und ein paar seiner Kollegen</a> haben diese sehr elegante Lösung einen zufälligen Hex-Farbcode per JavaScript zu generieren ausgetüftelt.
 

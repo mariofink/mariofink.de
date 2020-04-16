@@ -18,21 +18,27 @@ Voraussetzung: [Installation von Node.js](http://nodejs.org)
 
 Grunt in der Kommandozeile installieren
 
-    npm install -g grunt-cli
+```shell
+npm install -g grunt-cli
+```
 
 Dadurch wird das Grunt Kommandozeileninterface global installiert – möglicherweise sind hierfür Admin-Rechte erforderlich (_sudo_ bzw. unter Windows die Eingabeauffordung als Administrator ausführen)
 
 Für dieses Beispiel richte ich ein Demoprojekt ein. Dafür einen Ordner anlegen und darin ein neues Node-Projekt initialisieren:
 
-    mkdir grunt-demo
-    mkdir grunt-demo/js
-    mkdir grunt-demo/css
-    cd grunt-demo
-    npm init
+```shell
+mkdir grunt-demo
+mkdir grunt-demo/js
+mkdir grunt-demo/css
+cd grunt-demo
+npm init
+```
 
 Die Abfragen nach **npm-init** alle mit _Enter_ bestätigen. Dadurch wird eine initiale **package.json** Datei erstellt. Der nächste Befehl fügt dieser Datei eine Abhängigkeit hinzu und installiert sie automatisch:
 
-    npm install grunt --save-dev
+```shell
+npm install grunt --save-dev
+```
 
 Die grundlegende Installation vom Grunt JavaScript Task Runner ist damit abgeschlossen. Damit nun tatsächlich Aufgaben erledigt werden können benötigt man [Plugins](http://gruntjs.com/plugins).
 
@@ -46,50 +52,52 @@ Fast fertig. Nun muss man Grunt nur noch mitteilen, was erledigt werden soll. Di
 
 ### Gruntfile.js
 
-<pre class="wide"><code>module.exports = function(grunt) {
+```javascript
+module.exports = function(grunt) {
   // Grunt Konfiguration:
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     // Konfigurieren des concat Tasks
     concat: {
       js: {
         src: [
           // Alle JavaScript Dateien in diesem Ordner
-          'js/*.js',
+          "js/*.js",
         ],
         // werden in dieser Datei zusammengeführt
-        dest: 'scripts.js',
+        dest: "scripts.js",
       },
       css: {
         src: [
           // Alle CSS Dateien in diesem Ordner
-          'css/*.css',
+          "css/*.css",
         ],
         // werden in dieser Datei zusammengeführt
-        dest: 'styles.css',
-      }
-    }
-
-  });
+        dest: "styles.css",
+      },
+    },
+  })
   // Diese Plugins sollen geladen werden:
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks("grunt-contrib-concat")
   // Was beim Aufruf von "grunt" passieren soll:
-  grunt.registerTask('default', ['concat']);
-};
-</code></pre>
+  grunt.registerTask("default", ["concat"])
+}
+```
 
 ### Grunt ausführen
 
 Die Vorarbeit ist erledigt.
 Um Grunt nun die oben beschriebenen Aufgaben erledigen zu lassen, ist nur noch folgender Befehl auf der Kommandozeile im Projektordner auszuführen:
 
-    grunt
+```shell
+grunt
+```
 
 Viel einfacher geht’s kaum.
 Nun sollte sich der Inhalt sämtlicher JavaScript bzw. CSS Dateien in den Dateien scripts.js und styles.css wiederfinden.
 
-(github: https://github.com/mariofink/grunt-erste-schritte text: Code für dieses Beispiel auf github.com)
+[Code für dieses Beispiel auf github.com](//github.com/mariofink/grunt-erste-schritte)
 
 ## Und nun?
 

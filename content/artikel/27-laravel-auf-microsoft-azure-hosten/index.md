@@ -3,7 +3,7 @@ title: "Laravel auf Microsoft Azure hosten"
 date: "2017-04-25"
 ---
 
-Um das erstklassige (link: https://laravel.com/ text: PHP Framework Laravel) in der Microsoft Azure Cloud zum Laufen zu bekommen sind einige Einstellungen notwendig. Hier die wichtigsten Punkte:
+Um das erstklassige [PHP Framework Laravel](//laravel.com/) in der Microsoft Azure Cloud zum Laufen zu bekommen sind einige Einstellungen notwendig. Hier die wichtigsten Punkte:
 
 ## Application Settings
 
@@ -22,4 +22,4 @@ Im **public** Verzeichnis des Laravel-Projekts eine Datei namens **web.config** 
 
 Nach einem weiteren Deployment und neustarten des App Services funktioniert Laravel nun einwandfrei.
 
-Eine ausführlichere Erklärung: (link: http://blog.qbotx.com/basic-laravel-5-on-microsoft-azure-part-1/ text: Laravel 5 on Azure - part 1)
+Eine ausführlichere Erklärung: [Laravel 5 on Azure - part 1](//blog.qbotx.com/basic-laravel-5-on-microsoft-azure-part-1/)

@@ -14,7 +14,8 @@ Sicherheitskopie der Datenbank machen – sicher ist sicher!
 
 Nach einem CSV Produktimport muss folgendes SQL-Skript auf der Magento-Datenbank ausgeführt werden (bspw. per phpMyAdmin):
 
-<pre class="fullWidth"><code>INSERT INTO catalog_product_entity_media_gallery (attribute_id, entity_id, `value`)
+```SQL
+INSERT INTO catalog_product_entity_media_gallery (attribute_id, entity_id, `value`)
 SELECT ga.attribute_id, v.entity_id, v.value
 FROM catalog_product_entity_varchar v
 INNER JOIN eav_entity_type et ON et.entity_type_code='catalog_product'
@@ -22,7 +23,7 @@ INNER JOIN eav_attribute va ON va.entity_type_id=et.entity_type_id AND va.fronte
 INNER JOIN eav_attribute ga ON va.entity_type_id=et.entity_type_id AND ga.attribute_code='media_gallery'
 LEFT JOIN catalog_product_entity_media_gallery g ON g.entity_id=v.entity_id AND g.value=v.value
 WHERE v.value&lt;&gt;'no_selection' AND v.value&lt;&gt;'' AND g.value IS NULL;
-</code></pre>
+```
 
 Dadurch werden die korrekten Einträge im »Bilder«-Reiter für die betroffenen Produkte wieder hergestellt.
 
