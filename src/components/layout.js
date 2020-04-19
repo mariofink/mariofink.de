@@ -22,9 +22,9 @@ class Layout extends React.Component {
     }
     return (
       <div className="📄">
-        <header>{header}</header>
+        <header className="📄⬆️">{header}</header>
         <main>{children}</main>
-        <footer>
+        <footer className="📄⬇️">
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
