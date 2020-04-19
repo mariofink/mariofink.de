@@ -21,7 +21,7 @@ class Layout extends React.Component {
       )
     }
     return (
-      <div>
+      <div className="📄">
         <header>{header}</header>
         <main>{children}</main>
         <footer>
