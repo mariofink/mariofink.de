@@ -23,7 +23,6 @@ class BlogIndex extends React.Component {
                 <h3>
                   <Link to={node.fields.slug}>{title}</Link>
                 </h3>
-                <small>{node.frontmatter.date}</small>
               </header>
               <section>
                 <p
