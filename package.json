@@ -28,6 +28,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "gatsby-plugin-sass": "^2.2.3",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1"
   },
   "homepage": "https://mariofink.de",
