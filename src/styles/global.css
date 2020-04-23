@@ -32,3 +32,8 @@ a:focus {
   color: var(--highlight);
   text-decoration: none;
 }
+
+.📄⬇️ {
+  margin: 3rem 0;
+  text-align: center;
+}

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Bio from "../components/bio"
 
 class Layout extends React.Component {
   render() {
@@ -25,9 +26,12 @@ class Layout extends React.Component {
         <header className="📄⬆️">{header}</header>
         <main>{children}</main>
         <footer className="📄⬇️">
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <Bio />
+          <p>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </p>
         </footer>
       </div>
     )
