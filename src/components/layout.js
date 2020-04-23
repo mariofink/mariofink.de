@@ -23,7 +23,19 @@ class Layout extends React.Component {
     }
     return (
       <div className="📄">
-        <header className="📄⬆️">{header}</header>
+        <header className="📄⬆️">
+          {header}
+          <nav>
+            <ul>
+              <li>
+                <Link to={`/`}>Home</Link>
+              </li>
+              <li>
+                <Link to={`/posts`}>Artikel</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <main>{children}</main>
         <footer className="📄⬇️">
           <Bio />
