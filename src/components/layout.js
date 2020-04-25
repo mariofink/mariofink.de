@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Bio from "../components/bio"
+import MainNavigation from "../components/mainNavigation"
 
 class Layout extends React.Component {
   render() {
@@ -25,16 +26,7 @@ class Layout extends React.Component {
       <div className="📄">
         <header className="📄⬆️">
           {header}
-          <nav>
-            <ul>
-              <li>
-                <Link to={`/`}>Home</Link>
-              </li>
-              <li>
-                <Link to={`/posts`}>Artikel</Link>
-              </li>
-            </ul>
-          </nav>
+          <MainNavigation />
         </header>
         <main>{children}</main>
         <footer className="📄⬇️">
