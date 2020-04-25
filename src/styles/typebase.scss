@@ -97,6 +97,8 @@ h6 {
   }
   h2 {
     font-size: 1 * $scale * 1rem;
+    line-height: 1 * $leading;
+    margin-top: 1 * $leading;
   }
   h3 {
     font-size: $scale / 2 * 1rem;

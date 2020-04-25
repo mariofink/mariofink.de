@@ -14,6 +14,9 @@ class Homepage extends React.Component {
         <SEO title="Home" />
         <article>
           <h2>Home</h2>
+          <p>
+            <Link to="/posts">Artikel</Link>
+          </p>
         </article>
       </Layout>
     )
