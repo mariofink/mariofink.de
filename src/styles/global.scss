@@ -1,10 +1,12 @@
+$linkColour: #f45d48;
+
 :root {
-  --background: #1c0658;
-  --highlight: #36cdc4;
-  --main-text: #fefefe;
-  --link: hsl(329, 100%, 54%);
-  --link-active: hsl(329, 100%, 64%);
-  --link-visited: hsl(329, 100%, 34%);
+  --background: #f8f5f2;
+  --highlight: #078080;
+  --main-text: #333;
+  --link: #{$linkColour};
+  --link-active: #{lighten($linkColour, 20%)};
+  --link-visited: #{darken($linkColour, 20%)};
 }
 
 body {
