@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import Bio from "../components/bio"
-import MainNavigation from "../components/mainNavigation"
 
 class Layout extends React.Component {
   render() {
