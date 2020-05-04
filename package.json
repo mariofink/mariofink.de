@@ -26,7 +26,8 @@
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "source-sans-pro": "^3.6.0"
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^2.2.3",
