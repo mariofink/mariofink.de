@@ -23,13 +23,11 @@ class BlogPostTemplate extends React.Component {
             <p>{post.frontmatter.date}</p>
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
+        <hr />
         <nav>
-          <ul>
+          <ul className="post-nav">
             {previous && (
               <li>
                 <Link to={previous.fields.slug} rel="prev">
