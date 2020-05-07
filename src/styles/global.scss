@@ -32,24 +32,15 @@ a:focus {
 }
 
 .📄⬆️ {
-  background: var(--highlight);
-  color: var(--background);
   text-align: center;
-  padding: 3rem 0;
-
-  .site-title {
-    margin-top: 0;
-  }
+  padding: 3vw 0;
 }
 
 .📄⬆️ a {
-  color: var(--background);
   text-decoration: none;
 }
 
 .📄⬇️ {
-  background: var(--highlight);
-  color: var(--background);
   margin: 3rem 0 0;
   padding: 3rem;
   text-align: center;
@@ -58,4 +49,5 @@ a:focus {
 main {
   margin: 0 auto;
   max-width: 50rem;
+  padding: 0 4vw;
 }
