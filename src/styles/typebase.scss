@@ -1,6 +1,5 @@
 /*! Typebase.scss v0.1.0 | MIT License */
 @import "../../node_modules/source-sans-pro/source-sans-variable.css";
-@import "../../node_modules/source-code-pro/source-code-variable.css";
 
 // Typesetting variables. Edit here or override in main file prior to import of this.
 $baseFontSize: 22 !default; // in pixels. This would result in 22px on desktop
@@ -136,8 +135,6 @@ th {
 /* Code blocks */
 
 code {
-  font-family: "Source Code Variable" !important;
-  font-variant-ligatures: normal;
   // Forces text to constrain to the line-height. Not ideal, but works.
   vertical-align: bottom;
 }
