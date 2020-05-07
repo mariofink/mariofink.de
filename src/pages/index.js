@@ -15,32 +15,41 @@ class Homepage extends React.Component {
         <article>
           <h2>
             <span role="img" aria-label="Hallo">
-              👋
+              👋🏻
             </span>
             !
           </h2>
           <p>
-            Mein Name ist Mario Fink — ich arbeite als Webentwickler &amp; UX
-            Designer in Fulda.
+            Mein Name ist Mario Fink — ich arbeite als Webentwickler für einen
+            großen Reifenhersteller in Fulda.
           </p>
+          <p>Daneben bastele ich gerne an kleinen Nebenprojekten:</p>
           <p>
-            <em>Konkret heißt das,</em> ich entwerfe und baue Webseiten die
+            <ul>
+              <li>
+                <a href="//addons.mozilla.org/en-US/firefox/addon/epic-pinboard/">
+                  Epic Pinboard
+                </a>{" "}
+                – eine Firefox Erweiterung für Pinboard.in mit aufgeräumter
+                Nutzeroberfläche
+              </li>
+              <li>
+                <a href="//mariofink.github.io/react-intro-slides">
+                  Intro to React
+                </a>{" "}
+                – eine Einführung in React die ich für meine Kollegen erstellt
+                habe
+              </li>
+              <li>
+                <a href="//mariofink.github.io/farbenspiel/">Farbenspiel</a> –
+                kleiner Spielplatz zur Generierung von Farbschemata
+              </li>
+              <li>
+                <a href="//github.com/mariofink">Mehr auf GitHub</a>
+              </li>
+            </ul>
           </p>
-          <ul>
-            <li>leicht zugänglich sind</li>
-            <li>sich auf das Wesentliche konzentrieren</li>
-            <li>den Besucher nicht mit unnötigem Klimm-Bimm verwirren</li>
-          </ul>
-          <p>
-            <em>Im Detail heißt das,</em> ich beschäftige mich mit
-          </p>
-          <ul>
-            <li>HTML5, CSS3 &amp; JavaScript</li>
-            <li>Responsive Design</li>
-            <li>Progressive Enhancement</li>
-            <li>Benutzer-zentriertem Design</li>
-            <li>vielem mehr</li>
-          </ul>
+          <p>Hin und wieder schreibe ich über das, was ich tue:</p>
           <p>
             <Link to="/posts">Artikel</Link>
           </p>
