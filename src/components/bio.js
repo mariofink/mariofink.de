@@ -16,6 +16,7 @@ const Bio = () => {
           author
           social {
             twitter
+            github
           }
         }
       }
@@ -27,11 +28,12 @@ const Bio = () => {
     <div>
       <p>
         <strong>{author}</strong> – Webentwickler aus Fulda
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          Folge mir auf Twitter
-        </a>
+        <br />
+        <a href={`//twitter.com/${social.twitter}`}>Folge mir auf Twitter</a>
+        {` – `}
+        <a href={`//github.com/${social.github}`}>Folge mir auf GitHub</a>
       </p>
+      <p></p>
     </div>
   )
 }

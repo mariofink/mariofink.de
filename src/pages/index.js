@@ -23,7 +23,7 @@ class Homepage extends React.Component {
             Mein Name ist Mario Fink — ich arbeite als Webentwickler für einen
             großen Reifenhersteller in Fulda.
           </p>
-          <p>Daneben bastele ich gerne an kleinen Nebenprojekten:</p>
+          <p>Daneben bastele ich gerne an kleinen Projekten:</p>
           <p>
             <ul>
               <li>

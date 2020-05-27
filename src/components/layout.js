@@ -28,9 +28,7 @@ class Layout extends React.Component {
         <footer className="📄⬇️">
           <Bio />
           <p>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <Link to={`/impressum`}>Impressum/Datenschutzerklärung</Link>
           </p>
         </footer>
       </div>
