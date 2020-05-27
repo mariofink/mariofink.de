@@ -30,28 +30,27 @@ class Homepage extends React.Component {
                 <a href="//addons.mozilla.org/en-US/firefox/addon/epic-pinboard/">
                   Epic Pinboard
                 </a>{" "}
-                – eine Firefox Erweiterung für Pinboard.in mit aufgeräumter
+                – Firefox Erweiterung für Pinboard.in mit aufgeräumter
                 Nutzeroberfläche
               </li>
               <li>
                 <a href="//mariofink.github.io/react-intro-slides">
                   Intro to React
                 </a>{" "}
-                – eine Einführung in React die ich für meine Kollegen erstellt
-                habe
+                – Einführung in React, die ich für meine Kollegen erstellt habe
               </li>
               <li>
                 <a href="//mariofink.github.io/farbenspiel/">Farbenspiel</a> –
-                kleiner Spielplatz zur Generierung von Farbschemata
+                Kleiner Spielplatz zur Erzeugung von Farbschemata
               </li>
               <li>
                 <a href="//github.com/mariofink">Mehr auf GitHub</a>
               </li>
             </ul>
           </p>
-          <p>Hin und wieder schreibe ich über das, was ich tue:</p>
           <p>
-            <Link to="/posts">Artikel</Link>
+            <s>Hin und wieder</s> … <s>Gelegentlich</s> … So gut wie nie
+            schreibe ich über das, was ich tue: <Link to="/posts">Artikel</Link>
           </p>
         </article>
       </Layout>
