@@ -1,14 +1,14 @@
 // https://www.happyhues.co/palettes/8
 
-$linkColour: #f45d48;
+$linkColour: #078080;
 
 :root {
   --background: #f8f5f2;
   --highlight: #078080;
   --main-text: #333;
   --link: #{$linkColour};
-  --link-active: #{lighten($linkColour, 20%)};
-  --link-visited: #{darken($linkColour, 20%)};
+  --link-active: #{lighten($linkColour, 5%)};
+  --link-visited: #{darken($linkColour, 5%)};
 }
 
 body {
